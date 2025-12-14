@@ -1,0 +1,63 @@
+{
+  "name": "SAC",
+  "label": "Soft Actor-Critic",
+  "description": "Off-policy algorithm for continuous control, robust and sample-efficient for manipulation and locomotion.",
+  "type": "off_policy",
+
+  "params": {
+    "tau": {
+      "type": "float",
+      "label": "Target Update Tau",
+      "description": "Soft update coefficient for target networks.",
+      "min": 0.0001,
+      "max": 0.05,
+      "default": 0.005
+    },
+
+    "alpha": {
+      "type": "float",
+      "label": "Entropy Temperature (Alpha)",
+      "description": "Entropy temperature. If set to -1, enable automatic entropy tuning.",
+      "min": -1.0,
+      "max": 1.0,
+      "default": -1.0
+    },
+
+    "replay_buffer_size": {
+      "type": "int",
+      "label": "Replay Buffer Size",
+      "description": "Maximum number of transitions stored in the replay buffer.",
+      "min": 10000,
+      "max": 50000000,
+      "default": 1000000
+    },
+
+    "warmup_steps": {
+      "type": "int",
+      "label": "Warmup Steps",
+      "description": "Number of steps collected before training updates start.",
+      "min": 0,
+      "max": 500000,
+      "default": 10000
+    },
+
+    "train_freq": {
+      "type": "int",
+      "label": "Train Frequency",
+      "description": "Number of environment steps between training updates.",
+      "min": 1,
+      "max": 1000,
+      "default": 1
+    },
+
+    "gradient_steps": {
+      "type": "int",
+      "label": "Gradient Steps",
+      "description": "Number of gradient updates per training iteration.",
+      "min": 1,
+      "max": 1000,
+      "default": 1
+    }
+  }
+}
+

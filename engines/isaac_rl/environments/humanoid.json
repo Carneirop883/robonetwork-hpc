@@ -1,0 +1,18 @@
+{
+  "id": "Isaac-Humanoid-v2",
+  "label": "Humanoid",
+  "type": "humanoid",
+  "description": "Humanoid locomotion and balance training. High compute demand, ideal for A100.",
+
+  "env_params": {
+    "num_envs": {
+      "type": "int",
+      "label": "Number of Parallel Environments",
+      "description": "Vectorized environment count for Isaac Gym.",
+      "min": 64,
+      "max": 16384,
+      "default": 4096
+    }
+  }
+}
+

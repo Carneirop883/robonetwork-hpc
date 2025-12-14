@@ -1,0 +1,51 @@
+{
+  "engine": "isaac_rl",
+  "label": "Isaac Reinforcement Learning",
+  "description": "High-performance reinforcement learning engine based on NVIDIA Isaac Gym, optimized for robotics, humanoids, manipulation and large-scale simulation training.",
+  "category": "simulation_rl",
+  "version": "v1",
+  "status": "stable",
+
+  "capabilities": {
+    "datasets": true,
+    "checkpointing": true,
+    "resume_training": true,
+    "multi_environment": true,
+    "vectorized_envs": true,
+    "domain_randomization": true,
+    "curriculum_learning": true,
+    "sim2real_ready": true,
+    "headless": true
+  },
+
+  "runtimes": {
+    "primary": "isaac_gym",
+    "supported": ["isaac_gym", "isaac_sim"]
+  },
+
+  "supported_algorithms": [
+    "PPO",
+    "SAC",
+    "TD3"
+  ],
+
+  "supported_tasks": [
+    "locomotion",
+    "manipulation",
+    "gesture",
+    "humanoid",
+    "quadruped",
+    "multi_agent"
+  ],
+
+  "ui": {
+    "show_advanced_params": false,
+    "recommended_for": [
+      "robotics_training",
+      "humanoid_control",
+      "industrial_simulation",
+      "research_and_development"
+    ]
+  }
+}
+

@@ -1,0 +1,12 @@
+{
+  "requires": {
+    "units": "meters",
+    "fps": [30, 60],
+    "skeletons": ["HUMANOID_V1", "HAND_V1"]
+  },
+  "optional": {
+    "has_contacts": true,
+    "has_object_poses": true
+  }
+}
+

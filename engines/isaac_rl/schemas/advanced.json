@@ -1,0 +1,48 @@
+{
+  "domain_randomization": {
+    "type": "bool",
+    "label": "Domain Randomization",
+    "description": "Enable randomization of physical properties to improve sim-to-real transfer.",
+    "default": false
+  },
+
+  "curriculum_learning": {
+    "type": "bool",
+    "label": "Curriculum Learning",
+    "description": "Gradually increase task difficulty during training.",
+    "default": false
+  },
+
+  "observation_noise": {
+    "type": "float",
+    "label": "Observation Noise",
+    "description": "Gaussian noise applied to observations.",
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0
+  },
+
+  "action_noise": {
+    "type": "float",
+    "label": "Action Noise",
+    "description": "Gaussian noise applied to actions.",
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0
+  },
+
+  "privileged_observations": {
+    "type": "bool",
+    "label": "Privileged Observations",
+    "description": "Use additional simulator-only observations during training.",
+    "default": false
+  },
+
+  "asymmetric_actor_critic": {
+    "type": "bool",
+    "label": "Asymmetric Actor-Critic",
+    "description": "Use different observation spaces for actor and critic.",
+    "default": false
+  }
+}
+

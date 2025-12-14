@@ -1,0 +1,18 @@
+{
+  "id": "Isaac-Ant-v2",
+  "label": "Ant",
+  "type": "locomotion",
+  "description": "Quadruped-like locomotion baseline. Useful for policy stability and benchmarking.",
+
+  "env_params": {
+    "num_envs": {
+      "type": "int",
+      "label": "Number of Parallel Environments",
+      "description": "Vectorized environment count for Isaac Gym.",
+      "min": 64,
+      "max": 32768,
+      "default": 8192
+    }
+  }
+}
+

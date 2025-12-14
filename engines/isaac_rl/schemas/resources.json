@@ -1,0 +1,52 @@
+{
+  "gpus": {
+    "type": "int",
+    "label": "GPUs",
+    "description": "Number of GPUs required for the training job.",
+    "min": 1,
+    "max": 4,
+    "default": 1
+  },
+
+  "cpus": {
+    "type": "int",
+    "label": "CPUs",
+    "description": "Number of CPU cores allocated to the job.",
+    "min": 2,
+    "max": 128,
+    "default": 16
+  },
+
+  "mem_gb": {
+    "type": "int",
+    "label": "Memory (GB)",
+    "description": "Amount of system memory allocated to the job.",
+    "min": 4,
+    "max": 1024,
+    "default": 64
+  },
+
+  "time_limit_min": {
+    "type": "int",
+    "label": "Time Limit (minutes)",
+    "description": "Maximum execution time for the job in minutes.",
+    "min": 5,
+    "max": 2880,
+    "default": 240
+  },
+
+  "partition": {
+    "type": "string",
+    "label": "SLURM Partition",
+    "description": "Target SLURM partition for GPU execution.",
+    "default": "dev-a100-40"
+  },
+
+  "gpu_type": {
+    "type": "string",
+    "label": "GPU Type",
+    "description": "GPU model requested via SLURM GRES.",
+    "default": "a100"
+  }
+}
+

@@ -1,0 +1,18 @@
+{
+  "id": "Isaac-CartPole-v1",
+  "label": "CartPole",
+  "type": "classic_control",
+  "description": "Fast minimal environment for validating the pipeline, configs, and training outputs.",
+
+  "env_params": {
+    "num_envs": {
+      "type": "int",
+      "label": "Number of Parallel Environments",
+      "description": "Vectorized environment count for Isaac Gym.",
+      "min": 64,
+      "max": 32768,
+      "default": 4096
+    }
+  }
+}
+

@@ -1,0 +1,47 @@
+{
+  "epochs": {
+    "type": "int",
+    "label": "Training Epochs",
+    "description": "Total number of training epochs or iterations.",
+    "min": 1,
+    "max": 200000,
+    "default": 2000
+  },
+
+  "learning_rate": {
+    "type": "float",
+    "label": "Learning Rate",
+    "description": "Optimizer learning rate.",
+    "min": 0.0000001,
+    "max": 0.1,
+    "default": 0.0003
+  },
+
+  "batch_size": {
+    "type": "int",
+    "label": "Batch Size",
+    "description": "Number of samples per training batch.",
+    "min": 64,
+    "max": 1048576,
+    "default": 8192
+  },
+
+  "gamma": {
+    "type": "float",
+    "label": "Discount Factor (Gamma)",
+    "description": "Reward discount factor.",
+    "min": 0.8,
+    "max": 0.9999,
+    "default": 0.99
+  },
+
+  "seed": {
+    "type": "int",
+    "label": "Random Seed",
+    "description": "Seed for reproducibility.",
+    "min": 0,
+    "max": 999999,
+    "default": 42
+  }
+}
+

@@ -1,0 +1,18 @@
+{
+  "id": "Isaac-Quadruped-v1",
+  "label": "Quadruped",
+  "type": "quadruped",
+  "description": "Quadruped locomotion environment for robotics, agility and terrain adaptation.",
+
+  "env_params": {
+    "num_envs": {
+      "type": "int",
+      "label": "Number of Parallel Environments",
+      "description": "Vectorized environment count for Isaac Gym.",
+      "min": 64,
+      "max": 16384,
+      "default": 4096
+    }
+  }
+}
+
