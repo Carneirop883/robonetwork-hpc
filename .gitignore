@@ -1,0 +1,14 @@
+# Containers e binários
+*.sif
+*.img
+*.tar
+*.tar.gz
+
+containers/*.sif
+
+# Cache / env
+__pycache__/
+*.pyc
+.env
+.venv
+

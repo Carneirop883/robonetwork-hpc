@@ -1,0 +1,23 @@
+Bootstrap: docker
+From: nvidia/cuda:12.4.1-cudnn-runtime-ubuntu22.04
+
+%post
+    apt-get update && apt-get install -y \
+        python3 python3-pip git wget vim \
+        libgl1 libglib2.0-0 libxrandr2 libxinerama1 \
+        libxcursor1 libxi6 libxext6 libsm6 libxrender1 \
+        libegl1-mesa libgles2-mesa && apt-get clean
+
+    pip3 install --upgrade pip
+
+    # PyTorch + CUDA 12.4 compatível
+    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+
+    # Robotics base libs
+    pip3 install numpy scipy tqdm opencv-python-headless
+    pip3 install einops transforms3d numba
+    pip3 install wandb tensorboard rich
+
+%environment
+    export PATH=/usr/bin:$PATH
+    export PYTHONUNBUFFERED=1
